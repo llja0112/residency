@@ -15,6 +15,14 @@ export const Logo = (props: Props) => {
 
   return (
     /* eslint-disable @next/next/no-img-element */
-    <h1>NUHS Residency</h1>
+    <h1 className={clsx(className)} style={{ display: 'flex', alignItems: 'center' }}>
+      <img
+        src="/PrevMedLogo.png"
+        alt="National Preventive Medicine Residency"
+        loading={loading}
+        style={{ height: 40, marginRight: 8 }}
+        fetchPriority={priority}
+      />
+    </h1>
   )
 }
